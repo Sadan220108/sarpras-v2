@@ -89,8 +89,8 @@
         <tr><th>Nama Sarana/Prasarana</th><th>Kerusakan</th><th>Lokasi</th><th>Estimasi Biaya</th><th>Keterangan</th></tr>
         @forelse ($pengajuan->perbaikan as $r)
             <tr>
-                <td >{{ $r->nama_sarana }}</td><td>{{ $r->kerusakan }}</td><td>{{ $r->lokasi }}</td>
-                <td style="text-align:right">{{ $rp($r->biaya) }}</td><td>{{ $r->keterangan }}</td>
+                <td style="text-align:center">{{ $r->nama_sarana }}</td><td style="text-align:center">{{ $r->kerusakan }}</td><td style="text-align:center">{{ $r->lokasi }}</td>
+                <td style="text-align:center">{{ $rp($r->biaya) }}</td><td>{{ $r->keterangan }}</td>
             </tr>
         @empty
             <tr><td colspan="5" style="text-align:center">-</td></tr>
