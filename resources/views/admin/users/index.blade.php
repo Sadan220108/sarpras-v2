@@ -15,7 +15,7 @@
                 <td>{{ $roles[$u->role] ?? $u->role }}</td>
                 <td>{{ $u->jabatan }}</td>
                 <td>{{ $u->unit }}</td>
-                <td><a class="link" href="{{ route('admin.users.edit', $u) }}">Ubah</a></td>
+                <td class="aksi"><a class="link" href="{{ route('admin.users.edit', $u) }}">Ubah</a></td>
             </tr>
         @endforeach
     </table>
